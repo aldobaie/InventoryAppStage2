@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.akaldobaie.udacity.abnd.inventoryapp.ProductContract.ProductEntry;
 
 
-/**
+/*
  * Created by Abdullah Aldobaie (akdPro) on 1/28/18 at 7:42 PM.
  */
 
@@ -28,7 +28,7 @@ public class ProductDbHelper extends SQLiteOpenHelper
 	@Override
 	public void onCreate(SQLiteDatabase db)
 	{
-		String SQL_CREATE_PETS_TABLE = "CREATE TABLE " + ProductEntry.TABLE_NAME + " ("
+		String SQL_CREATE_PRODUCTS_TABLE = "CREATE TABLE " + ProductEntry.TABLE_NAME + " ("
 			 + ProductEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT"
 			 + ", " + ProductEntry.COLUMN_PRODUCT_NAME + " TEXT NOT NULL"
 			 + ", " + ProductEntry.COLUMN_PRODUCT_PRICE + " TEXT NOT NULL"
@@ -39,12 +39,11 @@ public class ProductDbHelper extends SQLiteOpenHelper
 			 + ", " + ProductEntry.COLUMN_SUPPLIER_PHONE_NUMBER + " TEXT NOT NULL"
 			 + ");";
 		
-		db.execSQL(SQL_CREATE_PETS_TABLE);
+		db.execSQL(SQL_CREATE_PRODUCTS_TABLE);
 	}
 	
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
 	{
-		//TODO: delete old table and create a new one
 	}
 }

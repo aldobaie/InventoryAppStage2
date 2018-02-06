@@ -7,5 +7,77 @@
 		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 		<item name="colorAccent">@color/colorAccent</item>
 	</style>
-
+	
+	<style name="EmptyListViewTitle">
+		<item name="android:fontFamily">sans-serif-medium</item>
+		<item name="android:paddingTop">16dp</item>
+		<item name="android:textAppearance">?android:textAppearanceMedium</item>
+		<item name="android:textColor">@color/PrimaryText</item>
+	</style>
+	
+	<style name="EmptyListViewSubtitle">
+		<item name="android:fontFamily">sans-serif</item>
+		<item name="android:paddingTop">8dp</item>
+		<item name="android:textAppearance">?android:textAppearanceSmall</item>
+		<item name="android:textColor">@color/SecondaryText</item>
+	</style>
+	
+	<style name="ProductListViewHeader">
+		<item name="android:fontFamily">sans-serif-small</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:textAppearance">?android:textAppearanceSmall</item>
+		<item name="android:textColor">@color/colorPrimaryDark</item>
+		<item name="android:gravity">center_vertical|start</item>
+		<item name="android:textAlignment">textStart</item>
+	</style>
+	
+	<style name="ProductListViewItemProductName">
+		<item name="android:fontFamily">sans-serif-medium</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:textAppearance">?android:textAppearanceMedium</item>
+		<item name="android:textColor">@color/PrimaryText</item>
+		<item name="android:gravity">center_vertical|start</item>
+		<item name="android:textAlignment">textStart</item>
+	</style>
+	
+	<style name="ProductListViewItemProductPrice">
+		<item name="android:fontFamily">sans-serif</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:textAppearance">?android:textAppearanceSmall</item>
+		<item name="android:textColor">@color/SecondaryText</item>
+		<item name="android:gravity">center_vertical|start</item>
+		<item name="android:textAlignment">textStart</item>
+	</style>
+	
+	<style name="ProductListViewItemProductQuantity">
+		<item name="android:fontFamily">sans-serif</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:textAppearance">?android:textAppearanceSmall</item>
+		<item name="android:textColor">@color/SecondaryText</item>
+		<item name="android:gravity">center_vertical|start</item>
+		<item name="android:textAlignment">textStart</item>
+	</style>
+	
+	<style name="ProductListViewItemProductSale">
+		<item name="android:fontFamily">sans-serif</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:textAppearance">?android:textAppearanceSmall</item>
+		<item name="android:textColor">@color/SecondaryText</item>
+		<item name="android:gravity">center_vertical|start</item>
+		<item name="android:textAlignment">textStart</item>
+	</style>
+	
+	<style name="AddProductView">
+		<item name="android:fontFamily">sans-serif-medium</item>
+		<item name="android:paddingTop">16dp</item>
+		<item name="android:paddingEnd">4dp</item>
+		<item name="android:paddingBottom">16dp</item>
+		<item name="android:paddingStart">4dp</item>
+		<item name="android:textAppearance">?android:textAppearanceMedium</item>
+		<item name="android:textColor">@color/PrimaryText</item>
+	</style>
+	
+	<style name="AddProductImageButton" parent="Widget.AppCompat.Button.Borderless.Colored">
+		<item name="android:minWidth">40dp</item>
+	</style>
 </resources>

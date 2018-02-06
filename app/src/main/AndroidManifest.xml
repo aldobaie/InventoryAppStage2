@@ -9,6 +9,12 @@
 		 android:roundIcon="@mipmap/ic_launcher_round"
 		 android:supportsRtl="true"
 		 android:theme="@style/AppTheme">
+		
+		<provider
+			 android:name=".ProductProvider"
+			 android:authorities="com.akaldobaie.udacity.abnd.inventoryapp"
+			 android:exported="false"/>
+		
 		<activity android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
@@ -16,6 +22,34 @@
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
+		
+		<activity
+			 android:name=".DetailActivity"
+			 android:label="@string/detail_activity_label"
+			 android:parentActivityName=".MainActivity">
+			<meta-data
+				 android:name="android.support.PARENT_ACTIVITY"
+				 android:value=".MainActivity"/>
+		</activity>
+		
+		<activity
+			 android:name=".AddActivity"
+			 android:label="@string/add_activity_label"
+			 android:parentActivityName=".MainActivity">
+			<meta-data
+				 android:name="android.support.PARENT"
+				 android:value=".MainActivity"/>
+		</activity>
+		
+		<activity
+			 android:name=".EditActivity"
+			 android:label="@string/edit_activity_label"
+			 android:parentActivityName=".MainActivity">
+			<meta-data
+				 android:name="android.support.PARENT"
+				 android:value=".MainActivity"/>
+		</activity>
+	
 	</application>
 
 </manifest>

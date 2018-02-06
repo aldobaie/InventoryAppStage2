@@ -1,3 +1,49 @@
 <resources>
 	<string name="app_name">Inventory App</string>
+	
+	<string name="empty_list_view_title_text_view">Add something to see something…</string>
+	<string name="empty_list_view_subtitle_text_view">Get started by adding a product</string>
+	
+	<string name="product_name">Product Name:</string>
+	<string name="product_name_hint">name</string>
+	<string name="product_price">Product Price:</string>
+	<string name="product_price_hint">10</string>
+	<string name="product_quantity">Quantity:</string>
+	<string name="product_quantity_hint">5</string>
+	<string name="product_image">Product Image:</string>
+	<string name="supplier_name">Supplier Name:</string>
+	<string name="supplier_name_hint">Abdullah Aldobaie</string>
+	<string name="supplier_email">Supplier Email:</string>
+	<string name="supplier_email_hint">name@example.com</string>
+	<string name="supplier_phone">Supplier Phone:</string>
+	<string name="supplier_phone_hint">0551234567</string>
+	
+	<string name="save">Save</string>
+	<string name="unsaved_dialog_msg">Discard your changes and quit adding</string>
+	<string name="discard">Discard</string>
+	<string name="keep_editing">Keep Editing</string>
+	
+	<string name="saving_successful">Product saving successful</string>
+	<string name="saving_failed">Product saving failed!</string>
+	<string name="add_new">Add New</string>
+	<string name="empty_list_message_image">Empty List Message Image</string>
+	<string name="edit">Edit</string>
+	<string name="edit_activity_label">Edit Product</string>
+	<string name="add_activity_label">Add New Product</string>
+	<string name="detail_activity_label">Product Detail</string>
+	<string name="delete">Delete</string>
+	<string name="delete_dialog_msg">Are you sure you want to delete this product forever?</string>
+	<string name="cancel">Cancel</string>
+	<string name="deleting_failed">Product deleting failed!</string>
+	<string name="deleting_successful">Product saving successful</string>
+	<string name="header_name">NAME</string>
+	<string name="header_price">PRICE</string>
+	<string name="header_quantity">QUANTITY</string>
+	<string name="header_sale">SALE</string>
+	<string name="select_image">Select image</string>
+	<string name="decrease_quantity_description">An image button to decrease quantity</string>
+	<string name="increase_quantity_description">An image button to increase quantity</string>
+	<string name="email_button_description">An image button to send email to supplier</string>
+	<string name="call_button_description">An image button to send email to supplier</string>
+	<string name="no_change_found_msg">No changes found to save!</string>
 </resources>

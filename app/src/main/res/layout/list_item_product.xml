@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:layout_width="match_parent"
+	 android:layout_height="wrap_content"
+	 android:layout_gravity="center_vertical|start"
+	 android:padding="@dimen/productListViewItemMargin">
+	
+	<TextView
+		 android:id="@+id/product_name_text_view"
+		 style="@style/ProductListViewItemProductName"
+		 android:layout_width="0dp"
+		 android:layout_height="match_parent"
+		 app:layout_constraintBottom_toBottomOf="parent"
+		 app:layout_constraintEnd_toStartOf="@id/product_price_text_view"
+		 app:layout_constraintHorizontal_bias="0.0"
+		 app:layout_constraintStart_toStartOf="parent"
+		 app:layout_constraintTop_toTopOf="parent"/>
+	
+	<TextView
+		 android:id="@+id/product_price_text_view"
+		 style="@style/ProductListViewItemProductPrice"
+		 android:layout_width="wrap_content"
+		 android:layout_height="match_parent"
+		 app:layout_constraintBottom_toBottomOf="parent"
+		 app:layout_constraintEnd_toStartOf="@id/product_quantity_text_view"
+		 app:layout_constraintHorizontal_bias="0.5"
+		 app:layout_constraintStart_toEndOf="@id/product_name_text_view"
+		 app:layout_constraintTop_toTopOf="parent"/>
+	
+	<TextView
+		 android:id="@+id/product_quantity_text_view"
+		 style="@style/ProductListViewItemProductQuantity"
+		 android:layout_width="wrap_content"
+		 android:layout_height="match_parent"
+		 app:layout_constraintBottom_toBottomOf="parent"
+		 app:layout_constraintEnd_toStartOf="@id/sale_button"
+		 app:layout_constraintHorizontal_bias="1.0"
+		 app:layout_constraintStart_toEndOf="@id/product_price_text_view"
+		 app:layout_constraintTop_toTopOf="parent"
+		 tools:layout_editor_absoluteY="16dp"/>
+	
+	<Button
+		 android:id="@+id/sale_button"
+		 style="@style/Base.Widget.AppCompat.Button.Borderless"
+		 android:layout_width="wrap_content"
+		 android:layout_height="match_parent"
+		 android:drawableEnd="@drawable/ic_sale"
+		 app:layout_constraintBottom_toBottomOf="parent"
+		 app:layout_constraintEnd_toEndOf="parent"
+		 app:layout_constraintHorizontal_bias="1.0"
+		 app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>
